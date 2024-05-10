@@ -60,7 +60,20 @@ p {
 h3 {
     font-size: 18px;
 }
-
+@keyframes arrowMoviment {
+    100%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(-35px); 
+    }
+    0%{
+        transform: translateX(30px);  
+    }
+}
+.fa-arrow-left-long{
+    animation: arrowMoviment 3s infinite;
+}
 .btnVoltar {
     position: fixed;
     padding: 1rem;
