@@ -72,7 +72,7 @@ editForm.addEventListener('submit', function(e){
 })
 
 btnVoltar.addEventListener("click", function(){
-    location.href = "https://www.google.com"
+    location.href = "https://central-ferramentas.vercel.app"
 })
 
 

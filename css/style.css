@@ -157,6 +157,9 @@ h3 {
 
 /*----------Fix BtnVoltar Version------------*/
 @media screen and (max-width: 1300px) {
+    img{
+        display: none;
+    }
     .btnVoltar {
         left: 87%;
     }
@@ -167,6 +170,7 @@ h3 {
     .todo-list{
         width: 25rem;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
