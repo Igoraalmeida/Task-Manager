@@ -7,6 +7,7 @@ const editInput = document.querySelector('#edit-input');
 const cancelEditBtn = document.querySelector('#cancel-edit-btn');
 const addButton = document.querySelector('#addButton');
 const todoDiv = document.querySelector('.todo')
+const btnVoltar = document.querySelector('.btnVoltar')
 
 let oldInputValue;
 
@@ -68,6 +69,10 @@ editForm.addEventListener('submit', function(e){
         updateTodo(editInputValue)
     }
     toggleForms()
+})
+
+btnVoltar.addEventListener("click", function(){
+    location.href = "https://www.google.com"
 })
 
 

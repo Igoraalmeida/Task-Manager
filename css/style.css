@@ -4,33 +4,39 @@
     font-family: segoe UI;
     letter-spacing: 1.5px;
 }
-body{
+
+body {
     background-color: rgba(139, 0, 253, 0.521);
 }
-img{ 
+
+img {
     max-width: 40%;
     padding: 0 0 0 2rem;
 }
-header{
+
+header {
     font-weight: 500;
     font-size: 26px;
     padding: 2rem;
-    
+
 }
-button{
+
+button {
     border: none;
-    background-color: transparent ;
+    background-color: transparent;
     font-size: 1.5rem;
     padding: 0 1rem;
     cursor: pointer;
     color: rgba(137, 43, 226, 0.753);
     transition: ease .4s;
 }
-button:hover{
+
+button:hover {
     transform: scale(1.2);
     color: rgb(51, 17, 83);
 }
-input{
+
+input {
     padding: .9rem 6rem;
     margin-left: 3.5rem;
     text-align: center;
@@ -39,26 +45,47 @@ input{
     background-color: rgba(213, 212, 214, 0.644);
     transition: ease .4s;
 }
-button i{
+
+button i {
     pointer-events: none;
 }
-p{
+
+p {
     padding: 20px 0 0 0;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
 }
-h3{
+
+h3 {
     font-size: 18px;
 }
-.hide{
+
+.btnVoltar {
+    position: fixed;
+    padding: 1rem;
+    left: 91%;
+    top: 0;
+    background-color: rgba(32, 24, 24, 0.788);
+    color: rgba(213, 212, 214, 0.644);
+    border-bottom-left-radius: 50px;
+}
+
+.btnVoltar:hover {
+    transform: none;
+    color: white;
+}
+
+.hide {
     display: none;
 }
-.split{
+
+.split {
     display: flex;
     margin: 10rem 10rem;
 }
-.todo-container{
+
+.todo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,17 +97,21 @@ h3{
     box-shadow: 5px 8px 15px 10px black;
     background-color: azure;
 }
-.form-template{
+
+.form-template {
     padding: 1rem 0;
 }
-#cancel-edit-btn{
+
+#cancel-edit-btn {
     padding: 1rem 0;
 }
-.todo-list{
+
+.todo-list {
     width: 30rem;
     margin-top: 2rem;
 }
-.todo{
+
+.todo {
     display: grid;
     grid-template-areas: "titulo buttons";
     align-items: center;
@@ -88,27 +119,100 @@ h3{
     border-bottom: 1px solid #bebebe;
     transition: .3s;
 }
-.todo h3{
+
+.todo h3 {
     grid-area: titulo;
 }
-.buttons{
+
+.buttons {
     grid-area: buttons;
     text-align: end;
 }
-.done{
+
+.done {
     opacity: calc(50%);
-    transition: ease .4s; 
+    transition: ease .4s;
     background-color: rgba(213, 212, 214, 0.644);
     text-decoration: line-through;
     border-radius: 10px;
 }
-.examples1, .examples2{
+
+.examples1,
+.examples2 {
     opacity: calc(50%);
     transition: ease .4s;
 }
-.examples1 button, .examples2 button{
+
+.examples1 button,
+.examples2 button {
     pointer-events: none;
 }
-.examples1 h3, .examples2 h3{
+
+.examples1 h3,
+.examples2 h3 {
     text-decoration: line-through;
+}
+
+
+
+/*----------Fix BtnVoltar Version------------*/
+@media screen and (max-width: 1300px) {
+    .btnVoltar {
+        left: 87%;
+    }
+    .todo-container {
+        width: 100%;
+        margin: 0;
+    }
+    .todo-list{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+img {
+    padding: 0;
+    width: 100%;
+    display: none;
+}
+
+.btnVoltar {
+    left: 83%;
+}
+.split{
+    margin: 12rem 2rem;
+}
+.todo-container {
+    
+    width: 100%;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 730px) {
+
+input{
+    padding: .6rem .8rem;
+}
+img {
+    padding: 0;
+    width: 100%;
+    display: none;
+}
+
+.btnVoltar {
+    left: 70%;
+    font-size: 18px;
+}
+.split{
+    margin: 3rem 2rem;
+}
+.todo-container {
+    width: 100%;
+    margin: 0;
+}
+.todo-list{
+    width: 15rem;
+}
 }
